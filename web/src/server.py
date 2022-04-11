@@ -16,7 +16,7 @@ def get_home(req):
   # Connect to the database and retrieve the users
   db = mysql.connect(host=db_host, database=db_name, user=db_user, passwd=db_pass)
   cursor = db.cursor()
-  cursor.execute("select first_name, last_name, email from Users;")
+  cursor.execute("select first_name, last_name, email, focus from Users;")
   records = cursor.fetchall()
   db.close()
 
@@ -35,5 +35,5 @@ if __name__ == '__main__':
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
   app = config.make_wsgi_app()
-  server = make_server('0.0.0.0', 6543, app)
+  server = make_server('0.0.0.0', 6000, app)
   server.serve_forever()
