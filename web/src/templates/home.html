@@ -92,7 +92,7 @@
       <hr>
     
       <div class='separator'>Contact Us</div>
-      <form action=”mailto:girish.bkrishnan2002@gmail.com” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+      <form action="contact-form-handler.php" method="post" name="contact_form">
 
         <section class='responsive_grid'>
 
@@ -127,14 +127,55 @@
           <div class="field">
             <label>Please enter your message here:</label>
             <div></div>
-     <textarea name=”ContactCommentt” rows=”30″ cols=”10″>
+     <textarea name="ContactComment" rows="30″ cols="10″>
 </textarea>
           </div>
         </section>
-        <button type=”submit” value=”Submit”>Submit Form</button>
+        <button type="submit" value="Submit">Submit Form</button>
       </form>
 
     </section>
     <script type="text/javascript" src="./public/js/rest.js"></script>
+    <script language="JavaScript">
+
+      var frmvalidator = new Validator("contactform"); frmvalidator.addValidation("name","req","Please provide your name"); frmvalidator.addValidation("email","req","Please provide your email"); frmvalidator.addValidation("email","email", "Please enter a valid email address"); </script>
+
+<?php
+
+$errors = ";
+
+$myemail = 'girish.bkrishnan2002@gmail.com';//<—Put Your email address here. if(empty($_POST['name']))
+
+{
+
+$errors .= "\n Error: name is required";
+
+}
+
+$name = $_POST['name'];
+
+$message = $_POST['ContactComment'];
+
+
+$to = $myemail;
+
+$email_subject = "Contact form submission: $name";
+
+$email_body = "You have received a new message. ".
+
+" Here are the details:\n Name: $name \n ".
+
+"Message \n $message";
+
+$headers = "From: $myemail\n";
+
+mail($to,$email_subject,$email_body,$headers);
+
+//redirect to the 'thank you' page
+
+header(‘Location: home.html’);
+
+
+?>
   </body>
 </html> 
