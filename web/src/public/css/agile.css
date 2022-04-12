@@ -38,6 +38,15 @@ body {
   font-family: var(--font);
 }
 
+p {
+  line-height: 2;
+}
+
+img {
+  max-width: 100px;
+  height: auto;
+}
+
 button {
 
   font-size: calc(1rem + 1vw);
