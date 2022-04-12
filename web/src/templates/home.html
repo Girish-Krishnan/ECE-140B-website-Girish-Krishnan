@@ -19,12 +19,14 @@
 
     <div class='hero'>
       <h1> Girish Krishnan </h1>
-      <p> ECE 140B Individual Assignments </p>
+      <p> ECE 140B Spring 2022 - Individual Assignments </p>
     </div>
 
     <section class='padding-responsive'>
 
       <div class='separator'>My Team</div>
+      
+      <p>This is our team. Feel free to drop us an email!</p>
 
       <table class='margin-top-xl'>
         <thead>
@@ -40,141 +42,96 @@
           <tr>
             <td> {{user[0]}} </td>
             <td> {{user[1]}} </td>
-            <td> {{user[2]}} </td>
+            <td> <a href= mailto:{{user[2]}}>{{user[2]}}</a> </td>
             <td> {{user[3]}} </td>
           </tr>
           {% endfor %}
         </tbody>
       </table>
-
-      <div class='separator'>Our Project: CarProtect</div>
-
-      <h1 class='bordered'> What is CarProtect? </h1>
-
-      <h1 class='bordered'> How does it work? </h1>
-
-      <h1 class='bordered'> Customer Discovery </h1>
-
-      <h1 class='bordered'> Financials </h1>
-
-      <h1 class='bordered'> Ethics </h1>
-
-      <hr>
-
-      <p> I am a paragraph </p>
-
-      <ul>
-        <li> This is a list </li>
-        <li> And so is this </li>
-      </ul>
-
-      <ol>
-        <li> This is an ordered list-item </li>
-        <li> Don't forget about me!</li>
-      </ol>
-
-      <div class='separator'>
-        Responsive (2-column) Grid
-      </div>
-
+      
       <section class='responsive_grid'>
-        <div class='card bordered margin-none'> I'm a card! </div>
-        <div class='card bordered margin-none'> And so am I! </div>
+        <div class='card bordered margin-none'> <img src="girish.jpg"></img>
+          Girish Krishnan
+        </div>
+        <div class='card bordered margin-none'> <img src="anish.jpg"></img>
+          Anish Sharma
+        </div>
+        <div class='card bordered margin-none'> <img src="hamza.jpg"></img>
+          Hamza Khan 
+        </div>
+        <div class='card bordered margin-none'> <img src="ian.jpg"></img>
+          Ian Tanuwidjaja
+        </div>
       </section>
 
-      <div class='separator'>Tables</div>
+      <div class='separator'>About Our Project</div>
+      <h2 class='bordered'> What is CarProtect? </h2>
 
-      <table class='margin-top-xl'>
-        <thead>
-          <tr>
-            <th class='small'> column </th>
-            <th class='medium'> column </th>
-            <th class='large'> column </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td> column </td>
-            <td> column </td>
-            <td> column </td>
-          </tr>
-          <tr>
-            <td> column </td>
-            <td> column </td>
-            <td> column </td>
-          </tr>
-          <tr>
-            <td> column </td>
-            <td> column </td>
-            <td> column </td>
-          </tr>
-        </tbody>
-      </table>
+      <p> Imagine you've parked your car outside to grab some groceries from the local grocery store.  </p>
+      
+      <h2 class='bordered'> How does it work? </h2>
 
-      <div class='separator'>Forms</div>
+      <h2 class='bordered'> Customer Discovery </h2>
 
-      <div class='btn small '> Small Button </div>
-      <div class='btn small outline'> Small Button </div>
-      <div class='btn small pill'> Small Button </div>
-      <div class='btn small' disabled> Small Button </div> <BR><BR>
+      <h2 class='bordered'> Financials </h2>
 
-      <div class='btn medium'> Medium Button </div>
-      <div class='btn medium outline'> Medium Button </div>
-      <div class='btn medium pill'> Medium Button </div>
-      <div class='btn medium' disabled> Medium Button </div> <BR><BR>
+      <h2 class='bordered'> Ethics </h2>
 
-      <form>
+      <hr>
+    
+      <div class='separator'>Contact Us</div>
+      <form action=”mailto:girish.bkrishnan2002@gmail.com”
+
+
+method=”POST”
+
+
+enctype=”multipart/form-data”
+
+
+name=”EmailForm”>
 
         <section class='responsive_grid'>
 
           <div class='field'>
-            <label> Enter your first name: &nbsp;</label>
+            <label> Enter your name: &nbsp;</label>
             <input type='text' name='name' value='' class='margin-top-lg'>
           </div>
 
-          <div class='field select '>
-            <label> Choose a color: &nbsp;</label>
-            <div class="select margin-top-lg">
-              <select>
-                <option>First select</option>
-                <option>Red</option>
-                <option>Green</option>
-                <option>Blue</option>
-              </select>
-              <div class="select__arrow"></div>
-            </div>
-          </div>
         </section>
 
         <section class='responsive_grid'>
           <div class="field">
-            <label> Choose an Item </label>
-            <label class="margin-top-lg control control--checkbox">First checkbox
+            <label> Reason for Contact: </label>
+            <label class="margin-top-lg control control--checkbox">Website Bugs/Suggestions
               <input type="checkbox" checked="checked" />
               <div class="control__indicator"></div>
             </label>
-            <label class="control control--checkbox">Second checkbox
+            <label class="control control--checkbox">Hardware/Other Technical Issues
+              <input type="checkbox" />
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Delivery
+              <input type="checkbox" />
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Other
               <input type="checkbox" />
               <div class="control__indicator"></div>
             </label>
           </div>
 
           <div class="field">
-            <label> Choose an Item </label>
-            <label class="margin-top-lg control control--radio">First radio
-              <input type="radio" name="radio" checked="checked" />
-              <div class="control__indicator"></div>
-            </label>
-            <label class="control control--radio">Second radio
-              <input type="radio" name="radio" />
-              <div class="control__indicator"></div>
-            </label>
+            <label>Please enter your message here:</label>
+            <div></div>
+     <textarea name=”ContactCommentt” rows=”30″ cols=”10″>
+</textarea>
           </div>
         </section>
-
+        <button type=”submit” value=”Submit”>Submit Form</button>
       </form>
 
     </section>
     <script type="text/javascript" src="./public/js/rest.js"></script>
   </body>
-</html>
+</html> 
