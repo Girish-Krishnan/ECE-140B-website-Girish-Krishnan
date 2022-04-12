@@ -92,13 +92,18 @@
       <hr>
     
       <div class='separator'>Contact Us</div>
-      <form action="contact-form-handler.php" method="post" name="contact_form">
+      <form action="https://formsubmit.co/girish.bkrishnan2002@gmail.com" method="POST">
 
         <section class='responsive_grid'>
 
           <div class='field'>
             <label> Enter your name: &nbsp;</label>
-            <input type='text' name='name' value='' class='margin-top-lg'>
+            <input type='text' name='name' value='' class='margin-top-lg' required>
+          </div>
+
+          <div class='field'>
+            <label> Enter your email: &nbsp;</label>
+            <input type='text' name='email' value='' class='margin-top-lg' required>
           </div>
 
         </section>
@@ -127,19 +132,17 @@
           <div class="field">
             <label>Please enter your message here:</label>
             <div></div>
-     <textarea name="ContactComment" rows="30″ cols="10″>
+     <textarea name="ContactComment" rows="6″ cols="10″>
 </textarea>
           </div>
         </section>
+        <input type ='hidden' name='_next' value='templates/home.html'>
+        <input type='hidden' name="_subject" value="CarProtect Contact Form">
         <button type="submit" value="Submit">Submit Form</button>
       </form>
 
     </section>
     <script type="text/javascript" src="./public/js/rest.js"></script>
-    <script language="JavaScript">
-
-      var frmvalidator = new Validator("contactform"); frmvalidator.addValidation("name","req","Please provide your name"); frmvalidator.addValidation("email","req","Please provide your email"); frmvalidator.addValidation("email","email", "Please enter a valid email address"); </script>
-
 
   </body>
 </html> 
