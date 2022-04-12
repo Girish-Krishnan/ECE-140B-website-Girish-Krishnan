@@ -30,7 +30,6 @@
 body {
   font-size: calc(1rem + 1vw);
   background: var(--page-color);
-  /*background-image:url(https://j.gifs.com/vQarrY.gif);*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
