@@ -43,8 +43,9 @@ p {
 }
 
 li {
-  padding-left: 1em;
+  /*padding-left: 1em;*/
   text-align: left;
+
 }
 
 img {
@@ -61,11 +62,18 @@ button {
   justify-content: center;
 }
 
-p, ol li, ul li {
+p {
   font-size: calc(0.8rem + 1vw);
   text-align:center;
-  color:white;
+  color:black;
 }
+
+ol li, ul li {
+  font-size: calc(0.8rem + 1vw);
+  text-align:left;
+  color:black;
+}
+
 /* -- ELEMENTS -- */
 .hero {
   background: var(--dark-color);
@@ -136,7 +144,7 @@ table th, table td {
   
 }
 
-#float_img {
+.float_img {
   position: absolute;
   top: 70%;
   left: 0%;
