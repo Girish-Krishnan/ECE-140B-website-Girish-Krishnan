@@ -145,7 +145,7 @@ table th, table td {
 }
 
 .float_img {
-  position: absolute;
+  position: fixed;
   top: 70%;
   left: 0%;
   width: 50%;
