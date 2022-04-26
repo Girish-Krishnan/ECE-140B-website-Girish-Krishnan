@@ -132,7 +132,15 @@ table th, table td {
   text-align: left;
   padding: var(--padding-med);
   border: 1px solid var(--dark-color);
+  word-wrap: break-word;
   
+}
+
+#float_img {
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  width: 50%;
 }
 
 a {
