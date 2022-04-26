@@ -243,6 +243,19 @@ table tr:nth-child(odd) {
   user-select: none;
   margin: 0px 0.25rem 0.75rem 0px;
 }
+
+.top {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: calc(1rem + 1vw);
+  background: var(--accent-color);
+  color: white;
+  padding: 0px calc(1rem + 1vw);
+  z-index: 100;
+}
+
 .btn:hover {
   background: var(--accent-color-dark);
 }
