@@ -51,6 +51,9 @@ li {
 img {
   max-width: 100%;
   max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 button {
@@ -247,8 +250,8 @@ table tr:nth-child(odd) {
 .top {
   position: fixed;
   
-  bottom: 0px;
-  left: 2rem;
+  right: 2rem;
+  bottom: 2rem;
   width: 100%;
   height: calc(1rem + 1vw);
   background: var(--accent-color);
