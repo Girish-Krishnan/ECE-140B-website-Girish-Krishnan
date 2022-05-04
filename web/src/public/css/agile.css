@@ -246,8 +246,9 @@ table tr:nth-child(odd) {
 
 .top {
   position: fixed;
-  top: 0px;
-  left: 0px;
+  
+  bottom: 0px;
+  left: 2rem;
   width: 100%;
   height: calc(1rem + 1vw);
   background: var(--accent-color);
