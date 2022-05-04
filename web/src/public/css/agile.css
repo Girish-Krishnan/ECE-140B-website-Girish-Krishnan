@@ -252,7 +252,8 @@ table tr:nth-child(odd) {
   
   right: 2rem;
   bottom: 2rem;
-  width: 100%;
+  width: 15%;
+  height: 15%;
   height: calc(1rem + 1vw);
   background: var(--accent-color);
   color: white;
