@@ -37,7 +37,7 @@
           <a href="kvp.html">Our KVP</a>
         </div>
         <div class='card bordered margin-none' onclick="window.location.href='ia.html';"> 
-          <a href="ia.html">Information Architecture (Assignment #5)</a>
+          <a href="ia.html">Info Architecture</a>
         </div>
       </section>
 
@@ -143,46 +143,6 @@
             </tr>
         </tbody>
     </table>
-
-      <div class='separator'>My Team</div>
-      
-      <p>This is our team. Feel free to drop us an email!</p>
-
-      <table class='margin-top-xl'>
-        <thead>
-          <tr>
-            <th class='small'> First Name </th>
-            <th class='medium'> Last Name </th>
-            <th class='large'> Email </th>
-            <th class='large'> Specialization </th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for user in users %}
-          <tr>
-            <td> {{user[0]}} </td>
-            <td> {{user[1]}} </td>
-            <td> <a href= mailto:{{user[2]}}>{{user[2]}}</a> </td>
-            <td> {{user[3]}} </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-      
-      <section class='responsive_grid'>
-        <div class='card bordered margin-none'> <img src="girish.png"></img>
-          Girish Krishnan
-        </div>
-        <div class='card bordered margin-none'> <img src="anish.png"></img>
-          Anish Sharma
-        </div>
-        <div class='card bordered margin-none'> <img src="hamza.png"></img>
-          Hamza Khan 
-        </div>
-        <div class='card bordered margin-none'> <img src="ian.png"></img>
-          Ian Tanuwidjaja
-        </div>
-      </section>
 
       
       <div class='separator'>About Our Project</div>
