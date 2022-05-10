@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Girish Krishnan ECE 140B Individual Assignments</title>
+    <meta name="author" content="Girish Krishnan">
+    <meta name="description" content="Girish's ECE 140B Individual Assignments">
+
+    <link rel="stylesheet" type="text/css" href="css/agile.css">
+
+  </head>
+
+  <body>
+
+    <div class='hero'>
+      <h1> Girish Krishnan: Information Architecture </h1>
+      <p> ECE 140B Spring 2022 - Individual Assignments </p>
+    </div>
+    <button class="top" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <section class='padding-responsive'>
+
+      <div class='separator'>Pages</div>
+      <section class='responsive_grid'>
+        <div class='card bordered margin-none' onclick="window.location.href='143.244.191.21';">
+          <a href="http://143.244.191.21/">Home</a>
+        </div>
+        <div class='card bordered margin-none' onclick="window.location.href='product.html';"> 
+          <a href="product.html">Our Product</a>
+        </div>
+        <div class='card bordered margin-none' onclick="window.location.href='kvp.html';"> 
+          <a href="kvp.html">Our KVP</a>
+        </div>
+        <div class='card bordered margin-none' onclick="window.location.href='ia.html';"> 
+          <a href="ia.html">Information Architecture (Assignment #5)</a>
+        </div>
+      </section>
+
+      <div class='separator'>Part 1: Analyzing Product Information Architecture</div>
+
+      On this page, I will analyze my product (CarProtect)'s current and envisioned information architecture. Here is the developing web application for CarProtect: http://164.92.89.132/
+
+      <h2 class='bordered'> What is the basic information the user needs to have access to on first interaction with CarProtect? </h2>
+
+    <p>The user first needs to have their CarProtect Device with them (i.e. it should have been purchased from an online order). Then, they should know how to switch it on (which is pretty intuitive since we will have a clear switch for them to toggle on). Lastly, the user just needs to scan a QR code which will give them access to the credentials (username and password) for their device. After that, it becomes very easy to use CarProtect because the user just has to login using their credentials to observe the car.</p>
+
+    <h2 class='bordered'> What IA Design Principles (Dan Brown) are important for CarProtect? </h2>
+
+    <p>The following IA Design Principles are important for CarProtect:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>IA Design Principle</th>
+                <th>Importance</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Principle of Choices</td>
+                <td>There is a paradox of choice - where less is more. In CarProtect, the number of choices available to the user is sufficiently narrowed down so that the flow of information and accessibility is simple. We have a simple user login page, which just asks for a username and password. Once logged in, the user can see the location of the car and live video footage all in the same place.</td>
+            </tr>
+            <tr>
+                <td>Principle of Front Doors</td>
+                <td>To guide users who arrive via unexpected routes, we ensure that the login page for CarProtect is present on every page of our web/mobile application, so that users can easily login to their device. Furthermore, we also anticipate that some users may purchase the hardware component of our product before checking out the mobile/web application. Thus, the package containing our device will also contain an instructional manual to guide the user to the login page of our web/mobile app.</td>
+            </tr>
+            <tr>
+                <td>Principle of Growth</td>
+                <td>The initial content of this website is only a fraction of what CarProtect will be in the future. To account for scalability, we have divided up the web application for CarProtect into small sections, each preceeded by a header. New sections can be added to account for more features. We also have a navgation bar on top, which has links to each page on the web application. Since the basic mechanism of CarProtect is relatively simple, the web application isn't very complex for the user and there is room to add more features in the future.</td>
+            </tr>
+            <tr>
+                <td>Principle of Exemplars</td>
+                <td>To avoid violating object predicability, we use commonly recognized symbols to help the user comprehend the functioning of the product. We have an alarm warning symbol to indicate the presence of an alarm/buzzer, and red warning signs for trespassers to avoid coming near the car. We may add the popular recording symbol (red circle) to indicate that any trespassers are being recorded. In our instruction manual, there will be exemplar images showing where the CarProtect device can be attached (near the top of the back window) so that the user is more familiar with the precise location for installation.</td>
+            </tr>
+            <tr>
+                <td>Principle of Disclosure</td>
+                <td>In CarProtect, we only show the user the features that are directly relevant to the security of their car, by displaying the features that are most relevant to them. For instance, we avoid showing the user the GPS coordinates of the car's location (unless the user really needs to see them) as these are just plain numbers that don't reveal much to the user. Instead, we show them a live Google map with the location surrounding their car. Similarly, CarProtect reveals information about the tilt/orientation of the car, but it doesn't explicitly give the x, y, and z values of acceleration to the user - as these would be irrelevant to them.</td>
+            </tr>
+            <tr>
+                <td>Principle of Objects</td>
+                <td>Each object should have a consistent structure. In CarProtect, the main "objects" are: the login page (which is consistently the same throughout all windows of the application), the device (which can be attached to the car), and the mechanism to connect the device and the web/mobile application. To ensure consistency across objects, we will use the same graphics or pattern leading the user to the login page, on both the hardware device and on the web application.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class='bordered'> Which structural/organizational principles make the most sense for CarProtect? </h2>
+
+    <p>The following structural/organizational principles make the most sense for CarProtect:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Structural/Organizational Principle</th>
+                <th>Importance</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Topical</td>
+                <td>This is important because it allows the user to view different aspects of their car in segregated categories. It would be beneficial to the customer if all the information needed to monitor their car was laid out in a categorical way, so that they can monitor one aspect at a time. For instance, it makes most sense to keep the location monitoring separate from the camera footage and tilt detection.</td>
+            </tr>
+            <tr>
+                <td>Hierarchical</td>
+                <td>A hierarchical organization is useful for CarProtect because some users may have multiple cars that they want to monitor, so it would beneficial if the uppermost hierarchy has the collection of cars that the user owns. Once the user selects one car, the hierarchy can branch out to include more specific details of that car. This helps ensure that users aren't too confused by a lot of information on one screen, and are instead more focused on a smaller subset of the information at a particular time.</td>
+            </tr>
+            <tr>
+                <td>Matrix</td>
+                <td>A matrix can be used by CarProtect in conjuction with the hierarchy. Each box in the matrix will display a brief summary of each aspect of the car - such as orientation/tilt, location, and camera view. Clicking on each box of the matrix helps unfold more information. To ensure that the matrix layout isn't too confusing for the user, we will ensure that each wireframe has only 3 or 4 boxes per matrix. We will provide a multi-dimensional experience and flexibility by having both a web application and a mobile application, to suit users who prefer either.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class='separator'>Part 2: Principles of Visual Hierarchy</div>
+
+    <p>Here is how I applied some of the 12 principles of Visual Hierarchy to guide users to the interactions added to my website:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Principle</th>
+                <th>Application</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Typographic Hierarchy</td>
+                <td>The headings in my website follow a consistent hierarchy in style, so that the user knows which ones are the main headings and which ones are smaller subheadings. The text within each section is in a different color from the headings, to increase contrast and improve readability.</td>
+            </tr>
+            <tr>
+                <td>Alignment</td>
+                <td>For easy-to-read alignment, I typically use tables (like these) to organize information for my individual assignments. I also have the contact information and names of my teammates organized in a table. Furthermore, the pictures of my teammates are aligned so that they are of a consistent size and orientation.</td>
+            </tr>
+            <tr>
+                <td>Repetition</td>
+                <td>I repeat the same pattern of organization in all pages of my website, with headings, subheadings, paragraphs, as well as a contact form at the end of the page. The title also has a similar look on all pages, and this helps make the user clearly remember the theme of my website and how they can easily navigate it.</td>
+            </tr>
+
+            <tr>
+                <td>Size and Scale</td>
+                <td>This website makes use of the responsive headings and widgets that we learned in class during the CSS lectures. Thus, the website looks organized regardless of which device it is viewed from and can match different sizes and scalings of screens. I also make use of size and scaling in the pictures I have embedded in some of my past individual assignments. I intentionally scale the pictures so that the user can see the entire picture in one frame of their screen, instead of having to continually scroll while viewing the image. Furthermore, the images scale in proportion to screen size. </td>
+            </tr>
+        </tbody>
+    </table>
+
+      <div class='separator'>My Team</div>
+      
+      <p>This is our team. Feel free to drop us an email!</p>
+
+      <table class='margin-top-xl'>
+        <thead>
+          <tr>
+            <th class='small'> First Name </th>
+            <th class='medium'> Last Name </th>
+            <th class='large'> Email </th>
+            <th class='large'> Specialization </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for user in users %}
+          <tr>
+            <td> {{user[0]}} </td>
+            <td> {{user[1]}} </td>
+            <td> <a href= mailto:{{user[2]}}>{{user[2]}}</a> </td>
+            <td> {{user[3]}} </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      
+      <section class='responsive_grid'>
+        <div class='card bordered margin-none'> <img src="girish.png"></img>
+          Girish Krishnan
+        </div>
+        <div class='card bordered margin-none'> <img src="anish.png"></img>
+          Anish Sharma
+        </div>
+        <div class='card bordered margin-none'> <img src="hamza.png"></img>
+          Hamza Khan 
+        </div>
+        <div class='card bordered margin-none'> <img src="ian.png"></img>
+          Ian Tanuwidjaja
+        </div>
+      </section>
+
+      
+      <div class='separator'>About Our Project</div>
+      <h2 class='bordered'> What is CarProtect? </h2>
+
+      <p> Imagine you've parked your car outside to grab some groceries from the local grocery store. After you come back, you notice that the window of your car trunk has been smashed and all your valuables in the trunk are gone. What do you do? Call the police? Most thiefs get away easily without being noticed, especially in large public parking areas. CarProtect will help you deter such thiefs. Our sensors precisely detect when a person attempts to break in, and loud alarms start blaring when a thief attempts to play their game. The premium version of CarProtect provides live video footage, allowing any suspect to be easily identified! </p>
+      
+      <h2 class='bordered'> How does it work? </h2>
+
+      <p>CarProtect uses a Passive Infrared Receiver (PIR Sensor) to detect the presence of a nearby human being, as well as accelerometers and gyroscopes to detect any suspicious movements around and within the car. Our unmatched glass-break detectors can precisely capture a break-in and notify the police immediately. CarDetect is interfaced with your mobile phone so that you receive live updates through our mobile application. For our premium version, you can also record live video footage of the area near your car trunk and receive a clear picture of any thief.</p>
+
+      <h2 class='bordered'> Customer Discovery </h2>
+
+      <p>The founders of CarProtect know several people who have experienced theft of valuable items from their cars. Although it is possible to retrieve lost items by using location markers such as AirTags, such tracking is inefficient especially when the thief is hundreds of miles away. GPS tracking is also ineffective as it doesn't give a very precise location of a stolen valuable. Why suffer the stress of finding a stolen object, when you can use CarProtect to prevent theft in the first place? The majority of our interviewed prospective customers have told us that they have NEVER gotten any of their stolen items back. Why? This is because the thief was unknown and unrecognizable. Furthermore, the theft came as an unexpected surprise. Our interviewed customers wholeheartedly agreed that CarProtect will identify risks of theft and even deter potential thiefs at a MUCH FASTER RATE than any conventional police investigation.</p>
+
+      <h2 class='bordered'> Competition </h2>
+
+      <p> Our primary competitors are LoJack and Apple AirTags. Even though LoJack uses GPS tracking to find the location of a stolen car, it's important to note that LoJack costs $700-$1000!! On the other hand, CarProtect only costs about $100 and provides real-time detection of possible break-ins, video footage, AND location tracking. And CarProtect is much cheaper! CarProtect is also more effective than AirTags because we use an alarm system to actually prevent theifs. This eliminates the need to find the location of stolen objects, defeating the purpose of AirTags.</p>
+
+      <h2 class='bordered'> Financials </h2>
+
+      <p>We have a Business-to-Customer model that obtains its revenue from direct sales of the IoT device to customers. Our estimated total cost of making one unit (i.e. one CarProtect device) is about $70, considering equipment, manufacturing, and installation. Since we are selling the product for $100, we have a profit margin of $30 per unit. We also earn revenue through sales of the premium model, wherein a camera is used to capture live footage.</p>
+
+      <h2 class='bordered'> Ethics </h2>
+
+      <p>Regarding the use of live recorded media: the video files remain within the IoT device and are not transmitted to the application or across the web. Files not used for evidence purposes (i.e. when a burglary occurs) are deleted automatically within the device. Concerning the possibility of false positives: a false positive is unlikely because we have multiple sensors used to detect a break-in, and if the system indicates a potential risk, then a live video recording is immediately started.</p>
+
+      <hr>
+    
+      <div class='separator'>Contact Us</div>
+      <form action="https://formsubmit.co/ec80ac62a161415b3fd2f92763640361" method="POST">
+
+        <section class='responsive_grid'>
+
+          <div class='field'>
+            <label> Enter your name: &nbsp;</label>
+            <input type='text' name='name' value='' class='margin-top-lg' required>
+          </div>
+
+          <div class='field'>
+            <label> Enter your email: &nbsp;</label>
+            <input type='text' name='email' value='' class='margin-top-lg' required>
+          </div>
+
+        </section>
+
+        <section class='responsive_grid'>
+          <div class="field">
+            <label> Reason for Contact: </label>
+            <label class="margin-top-lg control control--checkbox">Website Bugs/Suggestions
+              <input type="checkbox" checked="checked" />
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Hardware/Other Technical Issues
+              <input type="checkbox" />
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Delivery
+              <input type="checkbox" />
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Other
+              <input type="checkbox" />
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+
+          <div class="field">
+            <label>Please enter your message here:</label>
+            <div></div>
+     <textarea name="ContactComment" rows="6″ cols="10″>
+</textarea>
+          </div>
+        </section>
+        <input type ='hidden' name='_next' value='http://143.244.191.21'>
+        <input type='hidden' name="_subject" value="CarProtect Contact Form">
+        <button type="submit" value="Submit">Submit Form</button>
+      </form>
+
+    </section>
+    <script type="text/javascript" src="./js/rest.js"></script>
+    
+  </body>
+</html> 
