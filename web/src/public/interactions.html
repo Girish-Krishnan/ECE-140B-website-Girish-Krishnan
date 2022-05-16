@@ -18,7 +18,7 @@
   <body>
 
     <div class='hero'>
-      <h1> Girish Krishnan </h1>
+      <h1> Girish Krishnan: Information Architecture </h1>
       <p> ECE 140B Spring 2022 - Individual Assignments </p>
     </div>
     <button class="top" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -39,110 +39,52 @@
         <div class='card bordered margin-none' onclick="window.location.href='ia.html';"> 
           <a href="ia.html">Info Architecture</a>
         </div>
-        <div class='card bordered margin-none' onclick="window.location.href='features-benefits.html';"> 
-          <a href="features-benefits.html">Features vs. Benefits</a>
-        </div>
-        <div class='card bordered margin-none' onclick="window.location.href='interactions.html';"> 
-          <a href="interactions.html">Product Interactions</a>
-        </div>
+        <div class='card bordered margin-none' onclick="window.location.href='ia.html';"> 
+            <a href="ia.html">Info Architecture</a>
+          </div>
+          <div class='card bordered margin-none' onclick="window.location.href='features-benefits.html';"> 
+            <a href="features-benefits.html">Features vs. Benefits</a>
+          </div>
+          <div class='card bordered margin-none' onclick="window.location.href='interactions.html';"> 
+            <a href="interactions.html">Product Interactions</a>
+          </div>
       </section>
 
-      
+      <div class='separator'>Key Product Interactions</div>
+    <p>Here are some of the key product interactions implemented in our MVP Design, along with a description of how these will help the user complete the intended tasks.</p>
 
-      <div class='separator'>My Team</div>
-      
-      <p>This is our team. Feel free to drop us an email!</p>
+    <h2 class='bordered'>Interaction #1:  Opening the CarProtect package and connecting the device to the app via a QR code </h2>
+    <p> <b>How this will help the user complete the intended task:</b> 
+    Once the package is opened, the user just has to flip a switch to turn on the device. An LED light on the device gives them feedback and indicates whether the device was turned on successfully or not. Then, the pain of having to set a username and password is avoided by just letting the user scan a QR code, which helps automatically link the device to the app so that data from the device is streamed to the app.
+    As soon as the user logs in, the wireframe changes so that the user can see all information about their car at once. There is a message that pops up, indicating that the user succesfully connected.
+    </p>
 
-      <table class='margin-top-xl'>
-        <thead>
-          <tr>
-            <th class='small'> First Name </th>
-            <th class='medium'> Last Name </th>
-            <th class='large'> Email </th>
-            <th class='large'> Specialization </th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for user in users %}
-          <tr>
-            <td> {{user[0]}} </td>
-            <td> {{user[1]}} </td>
-            <td> <a href= mailto:{{user[2]}}>{{user[2]}}</a> </td>
-            <td> {{user[3]}} </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-      
-      <section class='responsive_grid'>
-        <div class='card bordered margin-none'> <img src="girish.png"></img>
-          Girish Krishnan
-        </div>
-        <div class='card bordered margin-none'> <img src="anish.png"></img>
-          Anish Sharma
-        </div>
-        <div class='card bordered margin-none'> <img src="hamza.png"></img>
-          Hamza Khan 
-        </div>
-        <div class='card bordered margin-none'> <img src="ian.png"></img>
-          Ian Tanuwidjaja
-        </div>
-      </section>
+    <h2 class='bordered'>Interaction #2: Charging the device using USB cable.</h2>
+    <p> <b>How this will help the user complete the intended task:</b> 
+        The device can easily be removed from where it is mounted, by removing the strap that attaches it to a headrest at the back of the car. The device has a USB port and the device comes with a USB cable. This can then be connected to the car to let the device charge.
+        The user can easily plug in the device to the car and the device will charge automatically. A familiar click sound will emerge to inform the user that the cable is securely connected, and a light on the device will light up to indicate that the device is charging.
+    </p>
 
-      <div class='separator'>User Interface (Assignment 4)</div>
+    <h2 class='bordered'>Interaction #3:  Transferring the device between different cars</h2>
+    <p> <b>How this will help the user complete the intended task:</b> 
+    The device comes with rubber suction cups as well as a strap, so the device can easily be removed from one car, and tranferred to another one. This provides flexibility for tourists who may rent multiple cars, one at a time. This also helps people who regularly rent cars.
+    If the device is securely attached, the rubber suction cups will make a familiar sound. There will also be audio feedback from the alarm to indicate whether the device is sturdy or not.
+    </p>
 
-      <h2 class='bordered'> Low-Resolution Mock-Up of our User Interface </h2>
+    <h2 class='bordered'>Interaction #4:  Using the app to access information about the car</h2>
+    <p> <b>How this will help the user complete the intended task:</b> 
+    When the user has logged in to their device, an animation graphic indicates that the device is correctly connected to the app.
+    The user also gets feedback when the button is clicked to login, indicating if they have successfully logged in. If their username and password is wrong, they will get a pop-up message indicating so.
+    Animations will be displayed on the main page of the app (when logged in) to show the current state of the car, such as the presence of nearby people or vibrations.
+    There will also be a Google maps display (which the user is likely familiar with) to show the car's location.
+    </p>
 
-      <p>We already have created a basic webpage mockup of our user interface, and this can be found at http://164.92.89.132/.
-      Our website has a basic login page, where the users login to their specific CarProtect device. We do not need a registration page because the login details are provided to the user when the user buys the device.
-
-      Here is what the CarProtect team currrently thinks of our user interface.
-
-      Here is a basic layout of the app, which helps determine possible threats to the car.</p>
-
-      <img src="ui1.png" class="img-responsive">
-
-      <p>Here is what our location tracking interface will look like:</p>
-
-      <img src="ui2.png" class="img-responsive">
-
-      <p>Here is what the live video footage will look like. We will use a camera to capture the video footage.</p>
-
-      <img src="ui3.png" class="img-responsive">
-
-      <p>The image below shows the approximate dimensions of the device.</p>
-
-      <img src="ui4.png" class="img-responsive">
-
-
-      <h2 class='bordered'> Laws of UI Design </h2>
-      
-      <p>Here are some examples of the laws of UI design, along with a short description and a corresponding image.</p>
-
-      <h3>Hick's Law</h3>
-
-      <p>Decision making time increases with number/complexity of options. An good UI example of Hick's Law is Gradescope, a tool used by institutions to manage student assignments and post grades. The login page is simple and just requires a username and password. Once the user is logged in, the buttons on the webpage are well-laid out to let the user navigate to their desired course. There are only a few options at each stage, making assignment submission and grading very easy.</p>
-
-      <img src="gradescope_ui.png" class="img-responsive">
-
-      <p>Each section of Gradescope presents only a few options for the user, making decision making time very low.</p>
-
-
-      <h3>Miller's Law</h3>
-
-      <p>The average person can only keep 7 (+/-) 2 items in working memory. An example that violates this law is Xilinx Vivado. The menus in Vivado have a great range of customizable options, but it is really difficult for one to remember where each option is located. A lot of great features are just cluttered together in a pretty unintuitive way. I'm a TA in a class that uses Vivado and I myself find it difficult to use Vivado!</p>
-
-      <img src="vivado_ui.jpg" class="img-responsive">
-
-      <h3>Tesler's Law</h3>
-
-       <p>There's always a certain amount of complexity that can't be reduced. An example of this is the UCSD COVID test kit vending machines. The machines have a very efficient interface and the vending process is nearly flawless. However, the user needs to swipe their UCSD ID and type in their UCSD username and password to get a testing kit. This can be a little inconvenient, but is the only way to ensure security (and this security feature can't be automated)</p>
-
-       <img src="ucsdcov.jpg" class="img-responsive">
-
-      <div class='separator'>Improving Product User Experience</div>
-
-      <p>Firstly, in my initial website, I noticed that the layout of text was a little messy, as text in tables tended to overlap with adjacent cells on small screens. This made it difficult for the user to access the email IDs of my team members for contact. The dimension of VISCOSITY inspired me to edit the styling of the table in my website so that text wraps around, instead of overlapping with other text. This was achieved in CSS by adding the break words feature to allow a long word to be split across two lines (similar to how it's done in a book). Secondly, I used the idea of VISIBILITY to make my text more readable on the website - this was done by ensuring that the background color (light aqua blue) well-contrasted with the color of the text (black). I also aligned the text in ordered and unordered lists so that the text lines up with each bullet point and appears more naturally organized to the reader. I added double-spacing to ensure that too much text isn't squished together. Thirdly, I used the dimension of CONSISTENCY to ensure that each segment of the website is designed in nearly the same manner, so that the user is used to the basic layout and flow of the website, making it easier for them to navigate to different parts. I achieved this by using a centered capitalized header before each section, with subheadings present in interactive boxes that change color when moused over.</p>
+    <h2 class='bordered'>Interaction #5:  Getting a notification when someone trespasses or when a thief comes near the car and attempts a break-in</h2>
+    <p> <b>How this will help the user complete the intended task:</b> 
+        The user gets either an SMS or an app notification (depending on what they prefer) when such an incident happens. To give further audio feedback, the alarm in the CarProtect device will also ring to warn the person trespassing.
+        As an alternate option, the device can also send a phone call to the user when such an incident occurs.
+        This helps immediately notify the user of a car break-in, so that action can be immediately taken.
+    </p>
 
       <div class='separator'>About Our Project</div>
       <h2 class='bordered'> What is CarProtect? </h2>

@@ -18,7 +18,7 @@
   <body>
 
     <div class='hero'>
-      <h1> Girish Krishnan </h1>
+      <h1> Girish Krishnan: Information Architecture </h1>
       <p> ECE 140B Spring 2022 - Individual Assignments </p>
     </div>
     <button class="top" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -39,111 +39,91 @@
         <div class='card bordered margin-none' onclick="window.location.href='ia.html';"> 
           <a href="ia.html">Info Architecture</a>
         </div>
-        <div class='card bordered margin-none' onclick="window.location.href='features-benefits.html';"> 
-          <a href="features-benefits.html">Features vs. Benefits</a>
-        </div>
-        <div class='card bordered margin-none' onclick="window.location.href='interactions.html';"> 
-          <a href="interactions.html">Product Interactions</a>
-        </div>
+        <div class='card bordered margin-none' onclick="window.location.href='ia.html';"> 
+            <a href="ia.html">Info Architecture</a>
+          </div>
+          <div class='card bordered margin-none' onclick="window.location.href='features-benefits.html';"> 
+            <a href="features-benefits.html">Features vs. Benefits</a>
+          </div>
+          <div class='card bordered margin-none' onclick="window.location.href='interactions.html';"> 
+            <a href="interactions.html">Product Interactions</a>
+          </div>
       </section>
 
+      <div class='separator'>Top 5 Features of Product</div>
+
+      <p>Here are the top 5 features of CarProtect, ranked by user need. Each feature will be distinguished from its associated benefit.</p>
+
+      <p>
+          <b>Feature #1: A small camera to record footage of any car break-in.</b>
+          <br>
+          <b>Benefit: Easily see the culprit who breaks into your car, and report them to the police.</b>
+          <br>
+          <b>Which users/personas will benefit? : </b> Any of the personas who are at risk of car-theft and carjacking will benefit from this.
+          Some examples of such personas include tourists who temporarily rent cars to go on road trips. Another example is a user who is short of hearing, and thus cannot hear a car alarm effectively. Video footage will thus help them visually identify a thief. 
+          <br>
+          <b>Why is this benefit so important to them? :</b>
+           Based on all our customer interviews, a lot of potential customers complained about how many thieves get away with stealing items from their car, without being seen or noticed. Thus, it is important that customers get a clear visual picture of the thief, so that the thief can be identified and/or reported to the police.
+          <br>
+      </p>
+      <hr>
+
+      <p>
+        <b>Feature #2: A vibration detection system that raises an alarm when the car shakes.</b>
+        <br>
+        <b>Benefit: If your car is hit by anything suspicious, you are immediately notified.</b>
+        <br>
+        <b>Which users/personas will benefit? : </b> Users who may have particularly delicate cars, and those who have valuable items in their car. Users who are concerned about people/other cars accidentally colliding into their car.
+        <br>
+        <b>Why is this benefit so important to them? :</b> 
+        This would help the customer get immediately notfied when something suspicious occurs to their car, and if their car experiences unusual tremors from a break in.
+        <br>
+    </p>
+    <hr>
+
+    <p>
+        <b>Feature #3: 3.7V, 2000mAh Lipo battery to power the device; lasts 2-3 days.</b>
+        <br>
+        <b>Benefit: You don't need to have the device plugged in to your car all the time. </b>
+        <br>
+        <b>Which users/personas will benefit? :</b>  This would particularly benefit personas who either don't have a charging point in their car, or those who don't want to keep devices plugged into their car (since gas is expensive and plugged in devices rely on energy from gas). Would also help those who don't use their car everyday.
+        <br>
+        <b>Why is this benefit so important to them? :</b> 
+        It is annoying to keep a security device plugged in all the time to a car, when instead one can charge their phone or laptop. Furthermore, manual connection of the security device to the car's internal power is also an issue as it requires manual installation and prevents the device from being transferred between multiple cars.
+        <br>
+    </p>
+    <hr>
+
+    <p>
+        <b>Feature #4: An infrared motion sensor used to detect motion of a person nearby.</b>
+        <br>
+        <b>Benefit: If anyone trespasses by your car, you are immediately notified and the person is recorded.</b>
+        <br>
+        <b>Which users/personas will benefit? : </b>
+        Some personas are deeply concerned about trespassers or stalkers who might scan the car and even try putting an AirTag on the car (for tracking in the future). Moreover, this helps identify a possible thief quickly before any damage occurs. This would help personas whose cars are parked outside on streets, rather than in garages.
+        <br>
+        <b>Why is this benefit so important to them? :</b>
+        This helps prevent theft and damage from happening in the first place, and warns the thief of the fact that they are being watched. The customers also feel a sense of personal security when the device does the monitoring for them, so they don't have to keep leaving their house to regularly check on the car.
+        <br>
+    </p>
+    <hr>
+
+    <p>
+        <b>Feature #5: A GPS Tracking service (via SIM card) that helps determine the car's precise location </b>
+        <br>
+        <b>Benefit: You can always know where your car is. If the car is stolen, you can easily pinpoint the location for the police to find it.</b>
+        <br>
+        <b>Which users/personas will benefit? : </b>
+        The personas that would benefit are a really broad spectrum of customers, but some specific ones include those who allow multiple people to borrow their car (and may find it hard to track down the location of their car), as well as car rental service owners who need to track down a car that is missing.
+        <br>
+        <b>Why is this benefit so important to them? :</b>
+        This helps the customer find a lost car, and track down a thief who may have stolen a car. If the car is used by multiple people, the user can find who has their car and where it is located. This reduces the stress of a lost, missing, or misplaced car.
+        <br>
+    </p>
+    <hr>
       
 
-      <div class='separator'>My Team</div>
       
-      <p>This is our team. Feel free to drop us an email!</p>
-
-      <table class='margin-top-xl'>
-        <thead>
-          <tr>
-            <th class='small'> First Name </th>
-            <th class='medium'> Last Name </th>
-            <th class='large'> Email </th>
-            <th class='large'> Specialization </th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for user in users %}
-          <tr>
-            <td> {{user[0]}} </td>
-            <td> {{user[1]}} </td>
-            <td> <a href= mailto:{{user[2]}}>{{user[2]}}</a> </td>
-            <td> {{user[3]}} </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-      
-      <section class='responsive_grid'>
-        <div class='card bordered margin-none'> <img src="girish.png"></img>
-          Girish Krishnan
-        </div>
-        <div class='card bordered margin-none'> <img src="anish.png"></img>
-          Anish Sharma
-        </div>
-        <div class='card bordered margin-none'> <img src="hamza.png"></img>
-          Hamza Khan 
-        </div>
-        <div class='card bordered margin-none'> <img src="ian.png"></img>
-          Ian Tanuwidjaja
-        </div>
-      </section>
-
-      <div class='separator'>User Interface (Assignment 4)</div>
-
-      <h2 class='bordered'> Low-Resolution Mock-Up of our User Interface </h2>
-
-      <p>We already have created a basic webpage mockup of our user interface, and this can be found at http://164.92.89.132/.
-      Our website has a basic login page, where the users login to their specific CarProtect device. We do not need a registration page because the login details are provided to the user when the user buys the device.
-
-      Here is what the CarProtect team currrently thinks of our user interface.
-
-      Here is a basic layout of the app, which helps determine possible threats to the car.</p>
-
-      <img src="ui1.png" class="img-responsive">
-
-      <p>Here is what our location tracking interface will look like:</p>
-
-      <img src="ui2.png" class="img-responsive">
-
-      <p>Here is what the live video footage will look like. We will use a camera to capture the video footage.</p>
-
-      <img src="ui3.png" class="img-responsive">
-
-      <p>The image below shows the approximate dimensions of the device.</p>
-
-      <img src="ui4.png" class="img-responsive">
-
-
-      <h2 class='bordered'> Laws of UI Design </h2>
-      
-      <p>Here are some examples of the laws of UI design, along with a short description and a corresponding image.</p>
-
-      <h3>Hick's Law</h3>
-
-      <p>Decision making time increases with number/complexity of options. An good UI example of Hick's Law is Gradescope, a tool used by institutions to manage student assignments and post grades. The login page is simple and just requires a username and password. Once the user is logged in, the buttons on the webpage are well-laid out to let the user navigate to their desired course. There are only a few options at each stage, making assignment submission and grading very easy.</p>
-
-      <img src="gradescope_ui.png" class="img-responsive">
-
-      <p>Each section of Gradescope presents only a few options for the user, making decision making time very low.</p>
-
-
-      <h3>Miller's Law</h3>
-
-      <p>The average person can only keep 7 (+/-) 2 items in working memory. An example that violates this law is Xilinx Vivado. The menus in Vivado have a great range of customizable options, but it is really difficult for one to remember where each option is located. A lot of great features are just cluttered together in a pretty unintuitive way. I'm a TA in a class that uses Vivado and I myself find it difficult to use Vivado!</p>
-
-      <img src="vivado_ui.jpg" class="img-responsive">
-
-      <h3>Tesler's Law</h3>
-
-       <p>There's always a certain amount of complexity that can't be reduced. An example of this is the UCSD COVID test kit vending machines. The machines have a very efficient interface and the vending process is nearly flawless. However, the user needs to swipe their UCSD ID and type in their UCSD username and password to get a testing kit. This can be a little inconvenient, but is the only way to ensure security (and this security feature can't be automated)</p>
-
-       <img src="ucsdcov.jpg" class="img-responsive">
-
-      <div class='separator'>Improving Product User Experience</div>
-
-      <p>Firstly, in my initial website, I noticed that the layout of text was a little messy, as text in tables tended to overlap with adjacent cells on small screens. This made it difficult for the user to access the email IDs of my team members for contact. The dimension of VISCOSITY inspired me to edit the styling of the table in my website so that text wraps around, instead of overlapping with other text. This was achieved in CSS by adding the break words feature to allow a long word to be split across two lines (similar to how it's done in a book). Secondly, I used the idea of VISIBILITY to make my text more readable on the website - this was done by ensuring that the background color (light aqua blue) well-contrasted with the color of the text (black). I also aligned the text in ordered and unordered lists so that the text lines up with each bullet point and appears more naturally organized to the reader. I added double-spacing to ensure that too much text isn't squished together. Thirdly, I used the dimension of CONSISTENCY to ensure that each segment of the website is designed in nearly the same manner, so that the user is used to the basic layout and flow of the website, making it easier for them to navigate to different parts. I achieved this by using a centered capitalized header before each section, with subheadings present in interactive boxes that change color when moused over.</p>
-
       <div class='separator'>About Our Project</div>
       <h2 class='bordered'> What is CarProtect? </h2>
 
