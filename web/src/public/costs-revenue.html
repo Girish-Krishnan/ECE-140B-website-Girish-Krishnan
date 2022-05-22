@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Girish Krishnan ECE 140B Individual Assignments</title>
+    <meta name="author" content="Girish Krishnan">
+    <meta name="description" content="Girish's ECE 140B Individual Assignments">
+
+    <link rel="stylesheet" type="text/css" href="css/agile.css">
+
+  </head>
+
+  <body>
+
+    <div class='hero'>
+      <h1> Our Product: CarProtect </h1>
+      <p> Who is it for? What does it do? How does it work? What are the key benefits? </p>
+    </div>
+
+    <section class='padding-responsive'>
+        <div class='separator'>Pages</div>
+      <section class='responsive_grid'>
+        <div class='card bordered margin-none'>
+          <a href="http://143.244.191.21/">Home</a>
+        </div>
+        <div class='card bordered margin-none'> 
+          <a href="product.html">Our Product</a>
+        </div>
+        <div class='card bordered margin-none'> 
+          <a href="kvp.html">Our KVP</a>
+        </div>
+
+        <div class='card bordered margin-none' onclick="window.location.href='ia.html';"> 
+          <a href="ia.html">Info Architecture</a>
+        </div>
+        <div class='card bordered margin-none' onclick="window.location.href='features-benefits.html';"> 
+          <a href="features-benefits.html">Features vs. Benefits</a>
+        </div>
+        <div class='card bordered margin-none' onclick="window.location.href='interactions.html';"> 
+          <a href="interactions.html">Product Interactions</a>
+        </div>
+        <div class='card bordered margin-none' onclick="window.location.href='interactions.html';"> 
+          <a href="costs-revenue.html">Costs & Revenue</a>
+        </div>
+      </section>
+
+      <p>This is the costs and revenue section of my website, for individual assignment #7, revenue model.</p>
+
+      <div class='separator'>Costs</div>
+    
+      <p>Here is a description of our product costs, including raw material, labor, and manufacturing.</p>
+
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Estimated cost in dollars ($) per device</th>
+        </tr>
+        <tr>
+          <td>Raw Material: 3D printing filament to make a case for the CarProtect device</td>
+          <td>
+              This needs to be 3d printed and will enclose the device. There will be holes to accommodate the buzzer/alarm, the camera, and a USB-C plugpoint for charging. 
+              Once our business launches after ECE 140B, we may initially use rented 3D printers to print the case (during the first year of the business), and then eventually buy 3D printers.
+
+          </td>
+          <td>$2.00</td>
+        </tr>
+        <tr>
+            <td>Raw Material: Battery</td>
+            <td>
+                We are using an off-the-shelf rechargeable lithium ion battery, which has a lifetime of a few days (given the sensors we use). The recharging doesn't cost any extra money, since recharging automatically occurs when the user plugs in the device via their USB.
+            </td>
+            <td>$10.00 (for a 2-3 days lifetime) or $20.00 (for a longer lifetime)</td>
+          </tr>
+
+
+          <tr>
+            <td>Raw Material: PCB board to solder all components</td>
+            <td>
+                A small PCB board will be used to compactly attach all our components together. 
+            </td>
+            <td>$3.00, but can sometimes be obtained for free when buying our sensors in bulk.</td>
+          </tr>
+
+          <tr>
+            <td>Raw Material: ESP 32 T-Call, with SIM card</td>
+            <td>
+                SIM cards from hologram.io have a free base cost (and hologram charges depending on data usage). The ESP32 board itself comes off-the-shelf, and its header pins will need to be soldered. 
+            </td>
+            <td>$10.00</td>
+          </tr>
+
+          <tr>
+            <td>Raw Material: ESP32 Camera </td>
+            <td>
+                Again, this comes off-the-shelf. 
+            </td>
+            <td>$8.00</td>
+          </tr>
+
+          <tr>
+            <td>Raw Material: Vibration and Motion Sensors</td>
+            <td>
+                These come at a lower cost when bought in bulk, and can directly be soldered on to the PCB board without any further modification.
+            </td>
+            <td>$2.00</td>
+          </tr>
+
+          <tr>
+            <td>Raw Material: Car Attachment Mechanical Parts</td>
+            <td>
+                Velcro straps used to attach the device to the back of a car headrest (or to the seat facing the trunk)
+            </td>
+            <td>$2.00</td>
+          </tr>
+
+        <tr>
+          <td>Manufacturing: 3D printing</td>
+          <td>The case needs to be 3D printed.</td>
+          <td>$2.00 per print, and $50 per week to rent a 3D printer. In future years of the business, we may opt to purchase a 3D printer or get the cases printed from an external source in bulk </td>
+        </tr>
+
+        <tr>
+          <td>Manufacturing: Soldering</td>
+          <td>Soldering equipment is needed to mount each component on to the PCB.</td>
+          <td>$8.00 to buy a soldering kit (a one-time purchase for the business)</td>
+        </tr>
+
+        <tr>
+            <td>Labor: Circuit Assembly and Soldering</td>
+            <td>The circuit needs to be assembled and soldered on to the PCB.</td>
+            <td>Initially, this will be done by one of the founding members (and is hence free). In the future, we may hire interns for pay that depends on the time commitment to circuit setup.</td>
+          </tr>
+
+          <tr>
+            <td>Labor: Packaging Safety</td>
+            <td>Given that the product contains a battery, it needs to be safely packaged before being sold or transported.</td>
+            <td>Initially done by one of the founding members, but will later be taken care of by employees (exact salary is TBD, but possibly $10-15 per hour)</td>
+          </tr>
+
+          <tr>
+            <td>Labor: Managing e-commerce</td>
+            <td>Maintaining a record of the purchases of the device, and managing the different revenue streams.</td>
+            <td>Initially done by one of the founding members, but will later be taken care of by employees (exact salary is TBD, but possibly $10-15 per hour)</td>
+          </tr>
+
+          <tr>
+            <td>Labor: Managing web hosting, databases, and SIM connections (software backend)</td>
+            <td>Regular maintenance of the web application and improving UI/UX.</td>
+            <td>Initially done by one of the founding members, but will later be taken care of by employees (exact salary is TBD, but possibly $10-15 per hour)</td>
+          </tr>
+
+          <tr>
+            <td>Labor: Customer Service and Repair</td>
+            <td>Answering customer questions/emails and gathering feedback for future product iterations. Repairing damaged/faulty products, if they arise.</td>
+            <td>Initially done by one of the founding members, but will later be taken care of by employees (exact salary is TBD, but possibly $10-15 per hour)</td>
+          </tr>
+
+          <tr>
+            <td>Labor: Sales and Marketing Research</td>
+            <td>Analyzing past sales, as well as competition from other businesses.</td>
+            <td>Initially done by one of the founding members, but will later be taken care of by employees (exact salary is TBD, but possibly $10-15 per hour)</td>
+          </tr>
+
+
+      </table>
+
+      <p>To make one unit (i.e. one device) using the resources we have right now, the base cost (i.e. one-time pay) would be about $45, taking into consideration the cost reductions achieved by purchasing sensors, microcontrollers, and PCBs in bulk. There is also a monthly cost of about $2 per product (SIM card service and running server connections). In the future, the total COGS will increase if we choose to purchase equipment such as 3D printers and soldering stations.</p>
+
+    <div class='separator'>Revenue</div>
+
+    <p>Here is a description of our product revenue model, i.e. how our product will make money.</p>
+
+    <h2 class='bordered'>Revenue Channels and Annual Revenue</h2>
+
+    
+    <table>
+        <tr>
+            <th>Revenue Channel</th>
+            <th>Description</th>
+            <th>Annual Revenue in $</th>
+            <th>Revenue Streams</th>
+        </tr>
+        <tr>
+            <td>Online sales from our website or from popular e-commerce stores such as Amazon.</td>
+            <td>
+                This would allow the user to purchase the hardware product. Once the device is shipped, the user will find the setup instructions needed to setup SIM connections (and pay a monthly service fee).
+            </td>
+            <td>$30,000 per year on average  (assuming 2,000 sales per year). For the first year, sales are likely to be low as the business is just starting.</td>
+            <td>This is a one-time purchase, as the hardware product only needs to be bought once.</td>
+        </tr>
+
+        <tr>
+            <td>Service charges for the SIM card and maintaining connection to the web application</td>
+            <td>
+                This is a monthly service fee for the SIM card. The SIM card is a monthly subscription.
+            </td>
+            <td>$144,000 per year on average  (assuming 2,000 sales per year, $6 per month). The cost of using SIM card for the customer is initially high (as we launch, during the first year), but will decrease over time if the user uses CarProtect for a longer period of time.</td>
+            <td>This revenue stream is monthly, so there would be an average of $12,000 per month.</td>
+        </tr>
+
+        <tr>
+            <td>Advertizing Revenue</td>
+            <td>
+                Advertizements on our website will be used as a sidestream source of revenue.
+            </td>
+            <td>$500 per annum, but this varies depending on the type and number of advertizements.</td>
+            <td>This is typically measured in CPM (cost per mille), and the revenue generated is proportional to the number of viewers visiting the site per day, and the number of clicks per day garnered by each advertizement.</td>
+        </tr>
+
+    </table>
+
+
+      <div class='separator'>Contact Us</div>
+      <form action="https://formsubmit.co/ec80ac62a161415b3fd2f92763640361" method="POST">
+
+        <section class='responsive_grid'>
+
+          <div class='field'>
+            <label> Enter your name: &nbsp;</label>
+            <input type='text' name='name' value='' class='margin-top-lg' required>
+          </div>
+
+          <div class='field'>
+            <label> Enter your email: &nbsp;</label>
+            <input type='text' name='email' value='' class='margin-top-lg' required>
+          </div>
+
+        </section>
+
+        <section class='responsive_grid'>
+          <div class="field">
+            <label> Reason for Contact: </label>
+            <label class="margin-top-lg control control--checkbox">Website Bugs/Suggestions
+              <input type="checkbox" checked="checked" />
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Hardware/Other Technical Issues
+              <input type="checkbox" />
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Delivery
+              <input type="checkbox" />
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Other
+              <input type="checkbox" />
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+
+          <div class="field">
+            <label>Please enter your message here:</label>
+            <div></div>
+     <textarea name="ContactComment" rows="6″ cols="10″>
+</textarea>
+          </div>
+        </section>
+        <input type ='hidden' name='_next' value='http://143.244.191.21'>
+        <input type='hidden' name="_subject" value="CarProtect Contact Form">
+        <button type="submit" value="Submit">Submit Form</button>
+      </form>
+
+    </section>
+    <script type="text/javascript" src="./js/rest.js"></script>
+
+  </body>
+</html> 
